@@ -1,0 +1,221 @@
+.confirmation-page {
+  box-sizing: border-box;
+  font-family: 'Work Sans', sans-serif;
+  padding: 20px;
+  max-width: 100%;
+  margin: 0 auto;
+  color: rgba(52, 13, 109, 1); 
+}
+
+/* Stil för rubriken Booking Details */
+.confirmation-page .heading-when-what-who {
+  font-family: 'Bebas Neue', sans-serif;
+  font-size: 24px;
+  color: rgba(52, 13, 109, 1);
+  text-align: center;
+  font-weight: 300;
+  margin-bottom: 15px;
+}
+
+/* Stil för rubriker */
+.confirmation-page h2 {
+  color: rgba(52, 13, 109, 1);
+  text-align: center;
+  font-weight: 300;
+  position: relative;
+  font-size: 24px;
+  margin-bottom: 15px;
+}
+
+/* Gemensam stil för linjer */
+.confirmation-page h2::before,
+.confirmation-page h2::after {
+  content: '';
+  position: absolute;
+  top: 50%;
+  height: 2px;
+  background-color: rgba(52, 13, 109, 1);
+  border-radius: 30px;
+}
+
+.confirmation-page h2::before {
+  left: 0;
+  width: 25%;
+}
+
+.confirmation-page h2::after {
+  right: 0;
+  width: 25%;
+}
+
+/* Stil för bokningsdetaljer */
+.confirmation-page .booking-detail {
+  margin-bottom: 10px;
+}
+
+.confirmation-page .booking-detail fieldset {
+  border: 1px solid rgba(52, 13, 109, 1);
+  border-radius: 8px;
+  margin-top: 8px;
+}
+
+.confirmation-page .booking-detail legend {
+  font-size: 12px;
+  font-weight: 400;
+  font-family: Work Sans;
+}
+
+/* Endast för p-taggar i confirmation-page */
+.confirmation-page p {
+  font-family: 'Work Sans', sans-serif; 
+  font-size: 24px; 
+  margin: 5px 0;
+  color: rgba(34, 34, 34, 1)
+}
+
+/* Stil för Total och Pris */
+.confirmation-page .total-container {
+  border: 2px solid rgba(236, 49, 90, 1);
+  border-radius: 8px;
+  padding: 3px;
+  margin-top: 15px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.confirmation-page .total-container h3 {
+  font-size: 18px;
+  font-weight: bold;
+  margin-bottom: 0;
+  color: rgba(236, 49, 90, 1);
+}
+
+.confirmation-page .total-container p {
+  font-size: 20px;
+  color: rgba(236, 49, 90, 1);
+  margin: 0;
+}
+
+/* Stil för CTA-knapp */
+.confirmation-page .cta-container {
+  text-align: center;
+  margin-top: 20px;
+}
+
+.confirmation-page .cta-button {
+  border: none;
+  background-color: rgba(236, 49, 90, 1);
+  color: white;
+  padding: 12px 25px;
+  font-size: 16px;
+  cursor: pointer;
+  border-radius: 8px;
+  width: 100%;
+  max-width: 300px;
+  margin: 0 auto;
+}
+
+/* Hover-effekt på CTA-knappen */
+.confirmation-page .cta-button:hover {
+  background-color: rgba(236, 49, 90, 0.9);
+}
+
+/* Stil för felmeddelanden */
+.confirmation-page .error {
+  color: red;
+  font-size: 12px;
+  text-align: center;
+  margin-top: 10px;
+}
+
+
+
+/* Grundläggande stil för när ingen bokning finns */
+.no-booking-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding-top: 50px;
+}
+
+/* Stil för felmeddelande */
+.no-booking-message {
+  font-family: 'Work Sans', sans-serif;
+  font-size: 18px;
+  color: #ff4d4d; 
+  text-align: center;
+  margin-top: 20px;
+  padding: 15px;
+  border: 2px solid #ff4d4d;
+  border-radius: 8px;
+  background-color: rgba(255, 77, 77, 0.1);
+}
+
+.no-booking-message:hover {
+  background-color: rgba(255, 77, 77, 0.2);
+}
+
+/* Stil för back-to-booking knappen */
+.back-to-booking-button {
+  background-color: rgba(236, 49, 90, 0.9); 
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  font-size: 16px;
+  margin-top: 20px;
+  cursor: pointer;
+  border-radius: 5px;
+  font-family: 'Work Sans', sans-serif;
+}
+
+.back-to-booking-button:hover {
+  background-color: rgba(236, 49, 90, 0.9); 
+}
+
+/* Stil för headern när ingen bokning finns */
+.no-booking-container h1 {
+  font-size: 32px;
+  margin: 0;
+  padding: 0;
+  color: rgba(52, 13, 109, 1);
+  font-family: 'Bebas Neue', sans-serif;
+}
+
+.no-booking-container h2 {
+  font-size: 24px;
+  margin: 0;
+  padding: 0;
+  color: rgba(236, 49, 90, 0.9);
+}
+
+
+/* MEDIA QUERY för mobilskärmar (max-width: 393px) */
+@media (max-width: 393px) {
+  .confirmation-page h2 {
+    font-size: 20px;
+  }
+  .confirmation-page .total-container h3 {
+    font-size: 18px;
+    margin-bottom: 5px;
+  }
+
+  .confirmation-page .total-container p {
+    font-size: 22px;
+  }
+
+  .confirmation-page .booking-detail legend {
+    font-size: 12px;
+}
+
+  .confirmation-page p {
+    font-size: 18px;
+  }
+
+  .confirmation-page .cta-button {
+    padding: 10px 20px;
+    font-size: 14px;
+    max-width: 100%;
+  }
+}

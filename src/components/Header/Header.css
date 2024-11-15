@@ -1,0 +1,24 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Work+Sans:wght@300;400;600&display=swap');
+
+.header {
+  display: flex;
+  flex-direction: column; 
+  align-items: center; 
+  justify-content: flex-start; 
+  padding-top: 20px; 
+}
+
+.header-image {
+  width: 30%; 
+  max-width: 300px; 
+  height: auto; 
+}
+
+.header-title {
+  font-family: 'Bebas Neue', sans-serif;
+  font-weight:lighter;
+  color: rgba(236, 49, 90, 1); 
+  text-align: center; 
+  margin: 0; 
+}
+ 

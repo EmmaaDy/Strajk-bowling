@@ -1,0 +1,183 @@
+/* Grundläggande stil för hela sidan */
+.booking-page {
+  box-sizing: border-box;
+}
+
+/* Stil för rubriker */
+.booking-page h2.heading-when-what-who,
+.booking-page h2.heading-shoes {
+  color: rgba(52, 13, 109, 1);
+  text-align: center;
+  font-weight: 300;
+  position: relative;
+}
+
+/* Gemensam stil för linjer */
+.booking-page h2.heading-when-what-who::before,
+.booking-page h2.heading-when-what-who::after,
+.booking-page h2.heading-shoes::before,
+.booking-page h2.heading-shoes::after {
+  content: '';
+  position: absolute;
+  top: 50%;
+  height: 2px;
+  background-color: rgba(52, 13, 109, 1);
+  border-radius: 30px;
+}
+
+/* Anpassning för "When, What & Who" rubrik */
+.booking-page h2.heading-when-what-who::before {
+  left: 0;
+  width: 25%;
+}
+.booking-page h2.heading-when-what-who::after {
+  right: 0;
+  width: 25%;
+}
+
+/* Anpassning för "Shoes" rubrik */
+.booking-page h2.heading-shoes::before {
+  left: 0;
+  width: 40%;
+}
+.booking-page h2.heading-shoes::after {
+  right: 0;
+  width: 40%;
+}
+
+/* Flexbox för Date och Time input */
+.booking-page .date-time {
+  display: flex;
+  justify-content: space-between;  /* Gör att de ligger bredvid varandra */
+  gap: 20px;  /* Skapar ett mellanrum mellan fälten */
+  flex-wrap: nowrap;  /* Förhindrar att de bryter rad */
+  width: 100%;  /* Säkerställer att .date-time fyller förälderns bredd */
+  color: rgba(52, 13, 109, 1)
+}
+
+/* Stil för varje fieldset */
+.booking-page fieldset {
+  border: 1px solid rgba(52, 13, 109, 1);
+  border-radius: 8px;
+  box-sizing: border-box;
+  margin-top: 10px;
+  flex: 1;  /* Gör varje fieldset lika stort */
+  min-width: 0;  /* Förhindrar overflow om innehållet är för stort */
+  color: rgba(52, 13, 109, 1)
+}
+
+/* Stil för input-fält */
+.booking-page input[type="date"],
+.booking-page input[type="time"] {
+  width: 100%;  /* Gör så att input-fälten fyller hela bredden av sitt fieldset */
+  border-radius: 4px;
+  border: none;
+  background-color: #fff3f3;
+  font-size: 16px;
+  padding: 10px;
+  box-sizing: border-box;
+}
+
+/* Förhindrar storleksförändring vid klick (focus) */
+.booking-page input[type="date"]:focus,
+.booking-page input[type="time"]:focus,
+.booking-page input[type="number"]:focus {
+  outline: none;
+  box-shadow: none; /* Ta bort skuggor vid focus */
+  border: none; /* Förhindra att border ökar i storlek */
+}
+
+/* Gör varje field till en flexbox för att styra placeringen */
+.booking-page .input-with-pers,
+.booking-page .input-with-lane {
+  display: flex;
+  align-items: center;
+}
+
+/* Stil för nummerfält - ökad bredd */
+.booking-page input[type="number"] {
+  width: 150px; 
+  border-radius: 4px;
+  border: none;
+  background-color: #fff3f3;
+  font-size: 24px;
+  font-family: 'Work Sans', sans-serif;
+  box-sizing: border-box;
+  color: rgba(34, 34, 34, 1);
+}
+
+/* Stil för "pers" och "lane" text */
+.booking-page .input-with-pers .pers,
+.booking-page .input-with-lane .lane {
+  font-size: 24px;
+  font-family: 'Work Sans', sans-serif;
+  margin-left: -130px; /* Mellanrum mellan text och input-fält */
+  color: rgba(34, 34, 34, 1);
+}
+
+
+/* Stil för shoe size fält */
+.booking-page .input-with-prefix {
+  position: relative;
+}
+
+/* Anpassning för shoe size input */
+.booking-page .input-with-prefix .prefix {
+  top: 50%;
+  left: 10px;
+  transform: translateY(-50%);
+  font-size: 24px;
+  font-family: 'Work Sans', sans-serif;
+}
+
+/* Flex-rad för shoe size */
+.booking-page .shoe-size-row {
+  display: flex;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+/* Runda knappar för att lägga till och ta bort shoe size */
+.booking-page .add-shoe-size,
+.booking-page .remove-shoe-size {
+  border: none;
+  background-color: rgba(236, 49, 90, 1);
+  color: white;
+  font-size: 24px;
+  font-weight: bold;
+  cursor: pointer;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 20px auto 0;
+  margin-left: 30px;
+  margin-right: 10px;
+}
+
+.booking-page .add-shoe-size {
+  margin: 20px auto;
+}
+
+/* Stil för submit-knappen */
+.booking-page .submit-button {
+  border: none;
+  background-color: rgba(236, 49, 90, 1);
+  color: white;
+  padding: 10px 20px;
+  font-size: 18px;
+  width: 100%;
+  cursor: pointer;
+  border-radius: 8px;
+  font-family: 'Work Sans', sans-serif;
+}
+
+/* Stil för felmeddelanden */
+.booking-page .error {
+  color: red;
+  font-size: 14px;
+  text-align: center;
+  margin-top: 10px;
+}

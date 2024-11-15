@@ -1,0 +1,50 @@
+/* Importera typsnitt från Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Work+Sans:wght@300;400;600&display=swap');
+
+.loading-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  width: 100%;
+  background-color: #fff3f3;
+  position: relative;
+  overflow: visible; 
+}
+
+.loading-image {
+  width: 136px;
+  height: 196px;
+  overflow: visible; 
+}
+
+.loading-text {
+  text-align: center;
+}
+
+.loading-text h1 {
+  font-family: 'Bebas Neue', sans-serif;
+  font-size: 80px;
+  font-weight: 400;
+  line-height: 96px;
+  letter-spacing: 0.03em;
+  text-align: left;
+  text-underline-position: from-font;
+  text-decoration-skip-ink: none;
+  margin: 0;
+  color: rgba(236, 49, 90, 1);
+}
+
+.loading-text h2 {
+  font-family: 'Work Sans', sans-serif;
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 23.46px;
+  letter-spacing: 0.43em;
+  text-align: center;
+  text-underline-position: from-font;
+  text-decoration-skip-ink: none;
+  margin-top: 10px;
+  color: rgba(52, 13, 109, 1);
+}
