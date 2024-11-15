@@ -19,7 +19,7 @@ Strajk Bowling gör det möjligt att boka bowlingbanor med skor direkt via webbe
 
 
 ## 🌐 Länk till Webbapplikationen
-Appen kan nås här: Strajk Bowling App (länk till appen, om publicerad).
+Appen kan nås här: [Strajk Bowling App](http://strajk-bowling.s3-website.eu-north-1.amazonaws.com/)
 
 ## 🛠️ Teknologier som används
 - **Frontend**: React och Typescript för ett interaktivt och typat gränssnitt.
