@@ -72,3 +72,6 @@ Response (bekräftelse på bokningen):
   "active": true
 }
 ```
+
+![Preview-image-1](/public/assets/Strajk.png)
+![Preview-image-1](/public/assets/Booking.png)
